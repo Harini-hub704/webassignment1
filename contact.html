@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <style>
+        .contact__input {
+            width: 100%;
+            font-size: var(--normal-font-size);
+            font-weight: var(--font-semi);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            border: 1px solid black;
+            margin-bottom: 15px;
+          }
+          .contact__button {
+            display: block;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin-top: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            margin-left: 150px;
+          }
+          .contact__button:hover{
+            background-color: rgba(87, 74, 91, 0.331);
+          }
+          @media screen and (min-width: 576px) {
+          .contact__form {
+            width: 360px;
+            padding-top: 2rem;
+          }
+          .contact__container {
+            justify-items: center;
+          }
+        }
+    </style>
+</head>
+<body style="background:linear-gradient(to right,rgb(232, 211, 214),rgb(217, 217, 234))">
+    <section>
+        <div class="contact__container bd-grid">
+            <h1 style=" font-size:40px; color:rgba(69, 63, 41, 0.801);  font-family:'Lucida Sans Regular', 'Lucida Grande', Geneva, Verdana, sans-serif;">Contact (Harini V)</h1>
+            <form action="" class="contact__form">
+                <input type="text" placeholder="Name" class="contact__input">
+                <input type="mail" placeholder="Email" class="contact__input">
+                <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                <input type="button" value="Enviar" class="contact__button button">
+            </form>
+        </div>
+    </section>
+</body>
+</html>
